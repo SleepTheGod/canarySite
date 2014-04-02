@@ -25,5 +25,8 @@ Things you may want to cover:
 
 # rails scaffolding to test Canary
 
-This is the README file for [server comming soon...]
+This is the first application scaffolding for testing the
+[*Canary Site*](https://github.com/adamrdavid/canarySite)
+by [Adam David](adamrdavid@gmail.com).
+
 <tt>rake doc:app</tt>.
