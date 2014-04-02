@@ -23,10 +23,7 @@ Things you may want to cover:
 
 * ...
 
-# Ruby on Rails Tutorial: first application
+# rails scaffolding to test Canary
 
-This is the first application for the
-[*Ruby on Rails Tutorial*](http://railstutorial.org/)
-by [Michael Hartl](http://michaelhartl.com/).
-Please feel free to use a different markup language if you do not plan to run
+This is the README file for [server comming soon...]
 <tt>rake doc:app</tt>.
