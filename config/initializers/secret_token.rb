@@ -9,4 +9,20 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-CanarySite::Application.config.secret_key_base = 'c085f31de7ddd11ecd2f8e985eb622b0b8057003f67b27aef8a32d91de9045591146a70edeac3a5dbff5a2e70ae9fd0995570a7e69de02caa9be50f511c24d57'
+require 'securerandom'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    # Use the existing token.
+    File.read(token_file).chomp
+  else
+    # Generate a new token and store it in token_file.
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+
+CanarySite::Application.config.secret_key_base = secure_token
