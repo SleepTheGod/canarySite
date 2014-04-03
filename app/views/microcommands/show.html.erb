@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Command txt:</strong>
+  <%= @microcommand.command_txt %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @microcommand.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_microcommand_path(@microcommand) %> |
+<%= link_to 'Back', microcommands_path %>
