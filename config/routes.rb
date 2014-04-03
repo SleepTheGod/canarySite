@@ -1,4 +1,6 @@
 CanarySite::Application.routes.draw do
+  get "pages/home"
+  get "pages/contact"
   resources :microcommands
 
   resources :users
